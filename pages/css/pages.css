@@ -16,19 +16,75 @@ img {
 }
 
 /* Voeg jouw css hieraan toe */
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 28px;
+    text-decoration:underline;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+li, p {
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
 #frst {
     padding-top: 10px;
     text-indent: -20px;
-    font-weight: bold;
+    font-weight: 400;
     list-style-type: none;
+    letter-spacing: 1px;
 }
 
-.lst {
-    padding-top: 10px;
-    font-weight: bold;
+.pn {
+    padding-top: 15px;
+    font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.lst:first-of-type {
+.pn:first-of-type {
     padding-top: 0px;
+}
+
+h2 > a {
+    text-decoration: none;
+    position: relative;
+    color: #333;
+}
+
+/* Onderlijnen van links wanneer er overgaan wordt met muis. 
+bron: https://stackoverflow.com/questions/44673496/how-to-animate-a-link-underline-with-border-bottom-so-that-there-is-space-betwe?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa */
+h2 > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+h2 > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+hr {
+    margin-right: 30%;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.151);
 }
