@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
 body {
     font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     font-weight: 400;
@@ -136,4 +138,61 @@ hr {
     margin-right: 30%;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+
+
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.color {
+    position: relative;
+    width: 15%;
+    height: 200px;
+    box-shadow: 1px 1px 3px #e0e0e0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.color p {
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    position: relative;
+    text-align: center;
+    top: 45%;
+    transform: translateY(-50%); 
+}
+
+.c1 {
+    background-color: hsla(195, 61%, 57%, 1);
+}
+
+.c2 {
+    background-color: #9A9898;
+}
+
+.c3 {
+    background-color: #BEBEBE;
+}
+
+.c4 {
+    background-color: #7A7A7A;
+}
+
+.c5 {
+    background-color: #F9F9FC;
+}
+
+.c5 p {
+    color: #333;
+}
+
+.bolder {
+    font-weight: 400;
 }
