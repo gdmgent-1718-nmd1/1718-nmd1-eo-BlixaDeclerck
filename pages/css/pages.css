@@ -84,6 +84,12 @@ h2 {
     font-size: 22px;
 }
 
+#nmd {
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+
 li, p {
     font-weight: 300;
     letter-spacing: 0.3px;
@@ -145,14 +151,14 @@ hr {
 /*digital-styleguide*/
 
 .logo {
-    width: 10%;
+    width: 5%;
+    margin-left: -10px;
 }
 .logotxt {
     font-family: "Slabo 27px";
     color: #7A7A7A;
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 0px;
-    margin-left: 25px;
 }
 
 .div-list {
@@ -209,7 +215,7 @@ hr {
 
 .tekst {
     position: relative;
-    width: 25%;
+    width: 30%;
     height: 200px;
     border: 1px solid #333;
     margin-right: 10px;
@@ -238,6 +244,9 @@ hr {
     visibility: hidden;
     opacity: 0;
     transition: opacity .5s, visibility .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .tekst:hover .vb {
     visibility: visible;
@@ -249,28 +258,22 @@ hr {
 }
 
 .vbtekst {
-    text-align: center;
-    position: relative;
-    transform: translateY(-50%);
     text-transform: lowercase;
 }
 .vb1 {
-    top: 30%;
     font-size: 40px;
     border: 2px solid #F9F9FC;
-    padding: 20px;
     font-weight: 300;
     letter-spacing: 5px;
+    padding: 20px 50px;
 }
 .vb2 {
-    top: 30%;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 100;
     letter-spacing: 4px;
 }
 .vb3 {
-    top: 35%;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 100;
     letter-spacing: 2px;
 }
@@ -281,6 +284,10 @@ hr {
     padding: 5px;
 }
 
+.knop {
+    height: 230px;
+}
+
 .nav {
     display: block;
     width: 50%;
@@ -289,9 +296,260 @@ hr {
 
 .icon {
     width: 12.5%;
-    height: 100px;
+    height: 80px;
 }
 
-.icon img {
+.iconimg {
     width: 40%;
+    padding: 10px;
+    margin: 0 auto;
 }
+
+/*knoppen*/
+.btn {
+    border: 2px solid #F9F9FC;
+    font-family: 'Helvetica Neue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    color: #F9F9FC;
+    padding: 5px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.container{
+    width: 320px;
+    height: 60px;
+    position: relative;
+    z-index: 5;
+    margin-left: -5px;
+}
+.een{
+    width: 320px;
+    height: 60px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    z-index: 10;
+    margin-left: -5px;
+
+    background: linear-gradient(to right, rgba(122, 122, 122, 0.795) 50%, rgba(122, 122, 122, 0.548) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out;
+}
+.een:hover {
+    background-position: left bottom;
+}
+.een:active {
+    background-color: rgb(122, 122, 122);
+}
+.een:focus {
+    outline: 0;
+}
+.btnblue {
+    border: 2px solid #F9F9FC;
+    width: 320px;
+    height: 60px;
+    background-color: hsla(195, 61%, 57%, 0.39);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    margin-left: -5px;
+
+    background: linear-gradient(to right, hsla(195, 61%, 57%, 0.726) 50%, hsla(195, 61%, 57%, 0.39) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out;
+}
+.een:hover + .btnblue {
+    background-position: left bottom;
+}
+.een:active + .btnblue {
+    background-color: hsla(195, 61%, 57%);
+}
+
+.twee{
+    font-size: 25px;
+    letter-spacing: 2px;
+    width: 180px;
+    height: 50px;
+}
+.tckts {
+    background: linear-gradient(to right, rgba(122, 122, 122, 0.795) 50%, rgba(122, 122, 122, 0.548) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out;
+}
+.tckts:hover {
+    background-position: left bottom;
+}
+.tckts:active {
+    background-color: rgb(122, 122, 122);
+}
+.tckts:focus {
+    outline: 0;
+}
+
+.lineup {
+    background-color: hsla(195, 61%, 57%, 0.548);
+    background: linear-gradient(to right, hsla(195, 61%, 57%, 0.795) 50%, hsla(195, 61%, 57%, 0.377) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position .3s ease-out;
+}
+.lineup:hover {
+    background-position: left bottom;
+}
+.lineup:active {
+    background-color:hsla(195, 61%, 57%);
+}
+.lineup:focus {
+    outline: 0;
+}
+
+/*selectievak*/
+.selectie {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.selectie input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #F9F9FC;
+    transition: all 0.1s ease-out;
+}
+.selectie:hover .checkmark {
+    background-color: rgba(122, 122, 122, 0.548);
+}
+.selectie input:checked ~ .checkmark {
+    background-color: #7A7A7A;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.selection input:checked .checkmark:after {
+    display: block;
+}
+
+.sel {
+    height: 120px;
+}
+
+/*navigatiebar*/
+.navbar ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: #7A7A7A;
+    border-bottom: 2px solid #F9F9FC;
+}
+.navbar li {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 100px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #F9F9FC;
+    display: block;
+    transition: .2s ease-out;
+}
+.navbar img {
+    position: relative;
+    width: 35%;
+    bottom: -14px;
+}
+.search {
+    position: absolute;
+    right: -100px;
+    width: 10%;
+}
+
+.navbar a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 10px;
+    left: 0;
+    background-color: #F9F9FC;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/*line-up*/
+.artiest {
+    width: 600px;
+    height: 440px;
+    background-color: #7A7A7A;
+    box-shadow: 0px 3px 5px 1px #ccc;
+    margin-right: 10px;
+}
+.artiest img {
+    height: 70%;
+}
+.infolu {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    position: relative; 
+}
+.infolu h3 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #F9F9FC;
+    z-index: 100;
+    font-weight: 300;
+    position: absolute;
+    top: -10px;
+}
+.nameblue {
+    position: absolute;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase; 
+    margin-top: 45px;
+    left: 186px;
+    z-index: -1;
+    color: rgba(78, 178, 212, 0.5) !important;
+}
+.infolu p {
+    font-size: 25px;
+    color: #F9F9FC;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 10px;
+}
+.lu {
+    padding: 0px;
+    height: 440px;
+    margin-bottom: 0px;
+}
+
