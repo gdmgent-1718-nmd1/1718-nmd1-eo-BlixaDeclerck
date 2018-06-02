@@ -269,12 +269,12 @@ hr {
 }
 .vb2 {
     font-size: 30px;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 4px;
 }
 .vb3 {
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 200;
     letter-spacing: 2px;
 }
 
@@ -445,6 +445,26 @@ hr {
 
 .sel {
     height: 120px;
+}
+
+/*forms*/
+.form {
+    width: 100%;
+    padding: 12px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #F9F9FC;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #F9F9FC;
+    background: none;
+}
+.form:focus {
+    outline: 0;
+}
+.form::placeholder {
+    color: rgba(249, 249, 252, 0.486);
 }
 
 /*navigatiebar*/
