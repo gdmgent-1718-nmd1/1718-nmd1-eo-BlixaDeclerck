@@ -45,8 +45,11 @@ img {
     font-size: 14px;
     letter-spacing: 0px;
     font-weight: 200;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 /*wanneer je met muis over de afbeelding gaat krijg je extra informatie te zien. 
 bron: https://stackoverflow.com/questions/14263594/how-to-show-text-on-image-when-hovering?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa */
